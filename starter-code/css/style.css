@@ -1,0 +1,257 @@
+/*
+0 - 600px: phone
+600px - 900px: tablet portrait
+900px - 1200px: tblet landscape
+[1200px - 1800px] is where our normal style apply
+1800px +: Big desktop
+
+/*$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layouts + grid > page layout > components
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 4rem; }
+
+.header--navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__logo-box {
+  padding-left: 2.5rem; }
+
+.header__line-box {
+  position: relative;
+  width: 35%;
+  padding: 3px 3px; }
+  @media (max-width: 56.25em) {
+    .header__line-box {
+      display: none; } }
+  .header__line-box .border-line {
+    position: absolute;
+    left: 10rem;
+    z-index: 1000;
+    height: 0.2rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px); }
+
+.header__text-box {
+  padding: 0.5rem 5rem;
+  background: rgba(63, 63, 63, 0.1);
+  backdrop-filter: blur(7px);
+  border-radius: 3px;
+  position: relative; }
+  .header__text-box--link {
+    margin-right: 10rem; }
+  @media (max-width: 56.25em) {
+    .header__text-box {
+      padding: 2rem 5rem; } }
+  .header__text-box a:link, .header__text-box a:visited {
+    margin-right: 5rem;
+    display: inline-block;
+    padding: 2rem 0rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all 0.2s; }
+    @media (max-width: 56.25em) {
+      .header__text-box a:link, .header__text-box a:visited {
+        margin-right: 2rem; } }
+  .header__text-box a:hover {
+    border-bottom: 2px solid #fff;
+    transform: scale(1.1); }
+
+.header__heading-secondary {
+  height: 75vh;
+  margin: 3rem 4rem; }
+
+.header__para {
+  padding: 0rem 5rem;
+  height: 70vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  @media (max-width: 56.25em) {
+    .header__para {
+      padding: 0rem 25rem;
+      height: 45vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+  .header__para .para--1 {
+    font-size: 2.5rem;
+    display: block; }
+  .header__para .para--2 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    display: block; }
+  .header__para .para--3 {
+    display: block;
+    font-size: 1.5rem;
+    margin-right: 10rem; }
+    @media (max-width: 56.25em) {
+      .header__para .para--3 {
+        margin-right: 0; } }
+
+.header__text-explore {
+  height: 70vh;
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .header__text-explore {
+      height: 25vh; } }
+
+.header__explore {
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  @media (max-width: 56.25em) {
+    .header__explore {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+
+@media (max-width: 600px) {
+  .header {
+    background-image: url(../assets/home/background-home-tablet.jpg); } }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.space-about__world {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70vh; }
+
+.space-about__explore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 70vh; }
+
+@media (max-width: 425px) {
+  .row .col-1-of-2 {
+    width: 100%; }
+  .space-about__world {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh; }
+  .space-about__explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30vh;
+    border: 2px solid white; } }
+
+.navigation {
+  position: relative; }
+  .navigation__menu-open {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border: 2px solid red;
+    display: none; }
+  .navigation__menu-close {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border: 2px solid red;
+    display: none; }
+
+.section-home {
+  height: 100vh;
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.5rem 0rem; }
+  @media (max-width: 56.25em) {
+    .section-home {
+      padding: 0 0rem;
+      background-image: url(../assets/home/background-home-mobile.jpg);
+      background-size: cover;
+      background-position: cover; } }
+
+.tour-crew {
+  background-image: url(../assets/crew/background-crew-desktop.jpg); }

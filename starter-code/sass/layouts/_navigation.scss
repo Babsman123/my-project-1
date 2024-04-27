@@ -1,0 +1,21 @@
+.navigation {
+  position: relative;
+
+  &__menu-open {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border: 2px solid red;
+
+    display: none;
+  }
+
+  &__menu-close {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border: 2px solid red;
+
+    display: none;
+  }
+}

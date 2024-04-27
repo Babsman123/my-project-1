@@ -1,0 +1,160 @@
+.header {
+  &--navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-box {
+    padding-left: 2.5rem;
+  }
+  &__line-box {
+    position: relative;
+    width: 35%;
+    padding: 3px 3px;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    .border-line {
+      position: absolute;
+      left: 10rem;
+      z-index: 1000;
+      height: 0.2rem;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(1px);
+    }
+  }
+  &__text-box {
+    // width: 50%;
+    padding: 0.5rem 5rem;
+    background: rgba(63, 63, 63, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 3px;
+    position: relative;
+
+    &--link {
+      margin-right: 10rem;
+    }
+    @include respond(tab-port) {
+      padding: 2rem 5rem;
+    }
+
+    a {
+      &:link,
+      &:visited {
+        margin-right: 5rem;
+        display: inline-block;
+        padding: 2rem 0rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+        transition: all 0.2s;
+
+        @include respond(tab-port) {
+          margin-right: 2rem;
+        }
+      }
+      &:hover {
+        border-bottom: 2px solid #fff;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__heading-secondary {
+    height: 75vh;
+    margin: 3rem 4rem;
+  }
+  &__para {
+    padding: 0rem 5rem;
+    height: 70vh;
+    color: #fff;
+
+    //positioning
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include respond(tab-port) {
+      padding: 0rem 25rem;
+      height: 45vh;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+    }
+    .para--1 {
+      font-size: 2.5rem;
+      display: block;
+    }
+
+    .para--2 {
+      font-size: 10rem;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .para--3 {
+      display: block;
+      font-size: 1.5rem;
+      margin-right: 10rem;
+      // padding: 0rem 10rem;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__text-explore {
+    height: 70vh;
+
+    //positioning
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+
+    position: relative;
+
+    @include respond(tab-port) {
+      height: 25vh;
+    }
+  }
+
+  &__explore {
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include respond(tab-port) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+}
