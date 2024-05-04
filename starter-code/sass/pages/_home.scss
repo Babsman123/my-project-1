@@ -14,29 +14,16 @@
   }
 }
 
-// .space-tourism-web {
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 100vh;
-//   width: 100%;
-// }
-// .web-page {
-//   background-image: url(../assets/home/background-home-desktop.jpg);
-// }
-.tour-crew {
-  background-image: url(../assets/crew/background-crew-desktop.jpg);
+.section-crew {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 2.5rem 0rem;
 }
-
-// @media (max-width: 768px) {
-//   .space-tourism-web {
-//     background-image: url(../assets/home/background-home-tablet.jpg);
-//     background-size: cover;
-//   }
-// }
-
-// @media (max-width: 425px) {
-//   .space-tourism-web {
-//     background-image: url(../assets/home/background-home-mobile.jpg);
-//   }
+// .tour-crew {
+//   background-image: url(../assets/crew/background-crew-desktop.jpg);
 // }
