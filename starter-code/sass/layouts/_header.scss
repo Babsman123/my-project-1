@@ -10,7 +10,7 @@
     padding-left: 2.5rem;
 
     @include respond(phone) {
-      padding-top: 3rem;
+      padding-top: 3.5rem;
     }
   }
   &__line-box {
@@ -56,9 +56,17 @@
       position: absolute;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%);
       z-index: 1000;
       text-align: center;
+      visibility: hidden;
+
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.1);
+      transition: all 0.2s;
+
+      //background
+      background: rgba(63, 63, 63, 0.1);
+      backdrop-filter: blur(100px);
     }
 
     a {
@@ -83,6 +91,7 @@
         }
       }
       &:hover {
+        display: inline-block;
         border-bottom: 2px solid #fff;
         transform: scale(1.1);
       }
@@ -113,7 +122,11 @@
     }
 
     @include respond(phone) {
-      display: none;
+      padding: 0rem 5rem;
+      height: 45vh;
+      color: #fff;
+
+      margin-top: 2rem;
     }
     .para--1 {
       font-size: 2.5rem;
