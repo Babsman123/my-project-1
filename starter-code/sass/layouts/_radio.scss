@@ -1,0 +1,55 @@
+.radio {
+  //position
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+
+  &__crew-group {
+    margin-right: 1rem;
+  }
+
+  &__crew-input {
+    display: none;
+  }
+
+  &__crew-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+  }
+
+  &__crew-button {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.9rem;
+
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: green;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+
+  &__crew-input:checked ~ &__crew-label &__crew-button::after {
+    opacity: 1;
+  }
+}

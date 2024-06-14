@@ -1,0 +1,23 @@
+.crew-details {
+  height: 83vh;
+  margin: 1rem 4rem;
+
+  &--1 {
+    height: 60vh;
+    padding: 2rem 4rem;
+    border: 2px solid green;
+
+    //display positioning
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__img {
+    height: 83vh;
+    margin-left: 5rem;
+
+    img {
+      height: 100%;
+    }
+  }
+}

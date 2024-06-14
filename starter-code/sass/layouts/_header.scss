@@ -52,9 +52,9 @@
     }
     @include respond(phone) {
       width: 80%;
-      height: 40vh;
+      min-height: 20vh;
       position: absolute;
-      top: 40%;
+      top: 30%;
       left: 50%;
       z-index: 1000;
       text-align: center;
@@ -190,11 +190,5 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    background-image: url(../assets/home/background-home-tablet.jpg);
   }
 }
