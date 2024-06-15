@@ -1,11 +1,12 @@
 .navigation {
   position: relative;
+  z-index: 100000;
 
   &__menu-open {
     position: absolute;
     top: 3rem;
     right: 2rem;
-    background-color: #fff;
+    background-color: red;
     height: 50px;
     width: 50px;
     padding: 2rem 2rem;
@@ -39,3 +40,27 @@
     }
   }
 }
+
+// .navigation-crew {
+//   position: relative;
+
+//   &__menu-open {
+//     position: absolute;
+//     top: 3rem;
+//     right: 2rem;
+//     background-color: red;
+//     height: 50px;
+//     width: 50px;
+//     padding: 2rem 2rem;
+//     cursor: pointer;
+
+//     border-radius: 10px;
+//     z-index: 100000;
+
+//     display: none;
+
+//     @include respond(phone) {
+//       display: block;
+//     }
+//   }
+// }

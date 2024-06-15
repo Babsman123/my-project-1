@@ -86,7 +86,8 @@ body {
   align-items: center; }
 
 .header__logo-box {
-  padding-left: 2.5rem; }
+  padding-left: 2.5rem;
+  z-index: 100000; }
   @media (max-width: 37.5em) {
     .header__logo-box {
       padding-top: 3.5rem; } }
@@ -261,12 +262,13 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .navigation {
-  position: relative; }
+  position: relative;
+  z-index: 100000; }
   .navigation__menu-open {
     position: absolute;
     top: 3rem;
     right: 2rem;
-    background-color: #fff;
+    background-color: red;
     height: 50px;
     width: 50px;
     padding: 2rem 2rem;
@@ -293,13 +295,13 @@ body {
 
 .radio {
   position: absolute;
-  top: 80%;
-  left: 50%;
+  top: 83%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
-  width: 35%; }
+  width: 35%;
+  margin-left: 4rem; }
   .radio__crew-group {
     margin-right: 1rem; }
   .radio__crew-input {
@@ -309,9 +311,9 @@ body {
     position: relative;
     padding-left: 4.5rem; }
   .radio__crew-button {
-    height: 3rem;
-    width: 3rem;
-    border: 1px solid yellow;
+    height: 2rem;
+    width: 2rem;
+    background: #686767;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -327,7 +329,7 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: green;
+      background-color: #fff;
       opacity: 0;
       transition: all 0.2s; }
   .radio__crew-input:checked ~ .radio__crew-label .radio__crew-button::after {

@@ -8,7 +8,7 @@
 
   &__logo-box {
     padding-left: 2.5rem;
-
+    z-index: 100000;
     @include respond(phone) {
       padding-top: 3.5rem;
     }

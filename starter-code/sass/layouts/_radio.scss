@@ -1,13 +1,14 @@
 .radio {
   //position
   position: absolute;
-  top: 80%;
-  left: 50%;
+  top: 83%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   flex-direction: row;
   width: 35%;
+  margin-left: 4rem;
 
   &__crew-group {
     margin-right: 1rem;
@@ -24,9 +25,9 @@
   }
 
   &__crew-button {
-    height: 3rem;
-    width: 3rem;
-    border: 1px solid yellow;
+    height: 2rem;
+    width: 2rem;
+    background: #686767;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -43,7 +44,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: green;
+      background-color: #fff;
       opacity: 0;
       transition: all 0.2s;
     }
