@@ -11,13 +11,49 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include respond(phone) {
+      height: 30vh;
+      padding: 2rem 4rem;
+      border: 2px solid green;
+
+      //display positioning
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__img {
     height: 83vh;
-    margin-left: 5rem;
+    // margin-left: 5rem;
+
+    @include respond(phone) {
+      height: 43vh;
+      // margin-left: 0;
+      margin: 0 auto;
+    }
 
     img {
       height: 100%;
     }
   }
+}
+
+.details--1 {
+  opacity: 1;
+  visibility: visible;
+}
+.details--2 {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+.details--3 {
+  display: none;
+}
+.details--4 {
+  display: none;
+  transition: all 0.2s ease-in-out;
 }
