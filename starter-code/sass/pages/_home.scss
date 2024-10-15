@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2.5rem 0rem;
+  // border: 4px solid yellow;
 
   @include respond(tab-port) {
     padding: 0 0rem;
@@ -15,7 +16,7 @@
 }
 
 .section-crew {
-  height: 100vh;
+  height: 100%;
   background-image: url(../assets/crew/background-crew-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -26,9 +27,49 @@
 
   @include respond(tab-port) {
     padding: 0 0rem;
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  @include respond(phone) {
+    padding: 0 0rem;
     background-image: url(../assets/crew/background-crew-mobile.jpg);
   }
 }
+
+.section-destination {
+  height: 100%;
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0rem;
+
+  @include respond(tab-port) {
+    padding: 0 0rem;
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  @include respond(phone) {
+    padding: 0 0rem;
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+}
+
+.section-technology {
+  height: 100%;
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0rem;
+  position: relative;
+
+  @include respond(phone) {
+    padding: 0 0rem;
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+  }
+}
+
 // .tour-crew {
 //   background-image: url(../assets/crew/background-crew-desktop.jpg);
 // }

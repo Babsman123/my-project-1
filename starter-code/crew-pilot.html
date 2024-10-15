@@ -6,10 +6,127 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
+  <div class="navigation">
+    <img
+      src="./assets/icon-menu.svg"
+      alt="icon-menu"
+      class="navigation__menu-open"
+    />
+
+    <img
+      src="./assets/icon-menu-close.svg"
+      alt="icon-menu"
+      class="navigation__menu-close"
+    />
+  </div>
+
+  <section class="section-crew">
+    <header class="header">
+      <div class="header--navigation">
+        <div class="header__logo-box">
+          <img src="./assets/shared/logo.svg" alt="space-logo" />
+        </div>
+
+        <div class="header__line-box">
+          <div class="border-line"></div>
+        </div>
+
+        <div class="header__text-box" id="link">
+          <!-- <div class="header__text-box--link"> -->
+            <a href="index.html"><span class="box-num">00</span> Home</a>
+            <a href="destination-europa.html"><span class="box-num">01</span> Destination</a>
+            <a href="crew-commander.html"
+              ><span class="box-num">02</span> Crew</a
+            >
+            <a href="technology-capsule.html"><span class="box-num">03</span> Technology</a>
+          <!-- </div> -->
+        </div>
+      </div>
+    </header>
+    
+    <div class="crew-header"><span>02</span>Meet your crew</div>
+    <div class="crew-container  ">
+      <!-- Left hand side  -->
+      <div class="crew-flex crew-container__ansari">
+        <!-- <div class="crew-header"><span>02</span>Meet your crew</div> -->
+        <div class="crew-details">
+          <div class="crew-details--1">pilot</div>
+          <div class="crew-details--2">Victor Glover</div>
+          <div class="crew-details--3">  
+            Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+            International Space Station. Glover is a commander in the U.S. Navy where 
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+            station systems flight engineer.
+          </div>
+        </div>
+
+        <div class="crew-radio">
+          <div class="crew-radio__group">
+            <input
+              type="radio"
+              id="first"
+              class="crew-radio__input"
+              name="size"
+            />
+            <label for="first" class="crew-radio__label"
+              ><a href="crew-commander.html"><span class="crew-radio__button"></span
+                ></a></label>
+          </div>
+
+          <div class="crew-radio__group">
+            <input
+              type="radio"
+              id="second"
+              class="crew-radio__input"
+              name="size"
+            />
+            <label for="second" class="crew-radio__label"
+              ><a href="crew-engineer.html"><span class="crew-radio__button"></span
+                ></a></label>
+          </div>
+
+          <div class="crew-radio__group">
+            <input
+              type="radio"
+              id="third"
+              class="crew-radio__input"
+              name="size"
+            />
+            <label for="third" class="crew-radio__label"
+              ><a href="crew-pilot.html"><span class="crew-radio__button"></span
+                ></a></label>
+          </div>
+
+          <div class="crew-radio__group">
+            <input
+              type="radio"
+              id="fourth"
+              class="crew-radio__input"
+              name="size"
+            />
+            <label for="fourth" class="crew-radio__label"
+              ><a href="crew-specialist.html"><span class="crew-radio__button"></span
+                ></a></label>
+          </div>
+        </div>
+      </div>
+      <!-- Right hand side -->
+      <div class="crew-flex crew-img">
+        <img
+          src="./assets/crew/image-victor-glover.png"
+          alt="image-victor-glover"
+          class="img-victor"
+        />
+      </div>
+    </div>
+    </div>
+  </section>
+<!-- 
   00 Home
   01 Destination
   02 Crew
@@ -23,6 +140,7 @@
   Pilot on the first operational flight of the SpaceX Crew Dragon to the 
   International Space Station. Glover is a commander in the U.S. Navy where 
   he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
+  station systems flight engineer.  -->
 </body>
+<script src="./index.js"></script>
 </html>

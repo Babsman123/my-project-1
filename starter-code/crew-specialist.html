@@ -1,27 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <img
+        src="./assets/icon-menu.svg"
+        alt="icon-menu"
+        class="navigation__menu-open"
+      />
 
-  02 Meet your crew
+      <img
+        src="./assets/icon-menu-close.svg"
+        alt="icon-menu"
+        class="navigation__menu-close"
+      />
+    </div>
 
-  Mission Specialist
-  Mark Shuttleworth
+    <section class="section-crew">
+      <header class="header">
+        <div class="header--navigation">
+          <div class="header__logo-box">
+            <img src="./assets/shared/logo.svg" alt="space-logo" />
+          </div>
 
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-</body>
+          <div class="header__line-box">
+            <div class="border-line"></div>
+          </div>
+
+          <div class="header__text-box" id="link">
+            <!-- <div class="header__text-box--link"> -->
+              <a href="index.html"><span class="box-num">00</span> Home</a>
+              <a href="destination-europa.html"><span class="box-num">01</span> Destination</a>
+              <a href="crew-commander.html"
+                ><span class="box-num">02</span> Crew</a
+              >
+              <a href="technology-capsule.html"><span class="box-num">03</span> Technology</a>
+            <!-- </div> -->
+          </div>
+        </div>
+      </header>
+      
+      <div class="crew-header"><span>02</span>Meet your crew</div>
+      <div class="crew-container  ">
+        <!-- Left hand side  -->
+        <div class="crew-flex crew-container__ansari">
+          <!-- <div class="crew-header"><span>02</span>Meet your crew</div> -->
+          <div class="crew-details">
+            <div class="crew-details--1">Flight Engineer</div>
+            <div class="crew-details--2">Anousheh Ansari</div>
+            <div class="crew-details--3">
+              Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+              Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+              fly to the ISS, and the first Iranian in space.
+            </div>
+          </div>
+
+          <div class="crew-radio">
+            <div class="crew-radio__group">
+              <input
+                type="radio"
+                id="first"
+                class="crew-radio__input"
+                name="size"
+              />
+              <label for="first" class="crew-radio__label"
+                ><a href="crew-commander.html"><span class="crew-radio__button"></span
+                  ></a></label>
+            </div>
+
+            <div class="crew-radio__group">
+              <input
+                type="radio"
+                id="second"
+                class="crew-radio__input"
+                name="size"
+              />
+              <label for="second" class="crew-radio__label"
+                ><a href="crew-engineer.html"><span class="crew-radio__button"></span
+                  ></a></label>
+            </div>
+
+            <div class="crew-radio__group">
+              <input
+                type="radio"
+                id="third"
+                class="crew-radio__input"
+                name="size"
+              />
+              <label for="third" class="crew-radio__label"
+                ><a href="crew-pilot.html"><span class="crew-radio__button"></span
+                  ></a></label>
+            </div>
+
+            <div class="crew-radio__group">
+              <input
+                type="radio"
+                id="fourth"
+                class="crew-radio__input"
+                name="size"
+              />
+              <label for="fourth" class="crew-radio__label"
+                ><a href="crew-specialist.html"><span class="crew-radio__button"></span
+                  ></a></label>
+            </div>
+          </div>
+        </div>
+        <!-- Right hand side -->
+        <div class="crew-flex crew-img">
+          <img
+            src="./assets/crew/image-mark-shuttleworth.png"
+            alt="image-anousheh-ansari"
+            class="img-mark"
+          />
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- 00 Home 01 Destination 02 Crew 03 Technology 02 Meet your crew Mission
+    Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and
+    CEO of Canonical, the company behind the Linux-based Ubuntu operating
+    system. Shuttleworth became the first South African to travel to space as a
+    space tourist. -->
+  </body>
+  <script src="./index.js"></script>
 </html>

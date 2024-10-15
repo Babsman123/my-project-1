@@ -18,14 +18,16 @@
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         margin-right: 0;
-        margin-bottom: $gutter-vertical-small;
+        margin-bottom: 1.5rem;
       }
     }
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 100% !important;
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 

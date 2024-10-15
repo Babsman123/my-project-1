@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <img
+        src="./assets/icon-menu.svg"
+        alt="icon-menu"
+        class="navigation__menu-open"
+      />
 
-  03 Space launch 101
+      <img
+        src="./assets/icon-menu-close.svg"
+        alt="icon-menu"
+        class="navigation__menu-close"
+      />
+    </div>
 
-  1
-  2
-  3
+    <section class="section-technology">
+      <header class="header">
+        <div class="header--navigation">
+          <div class="header__logo-box">
+            <img src="./assets/shared/logo.svg" alt="space-logo" />
+          </div>
 
-  The terminology...
-  Spaceport
+          <div class="header__line-box">
+            <div class="border-line"></div>
+          </div>
 
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch.
-</body>
+          <div class="header__text-box" id="link">
+            <!-- <div class="header__text-box--link"> -->
+            <a href="index.html"><span class="box-num">00</span> Home</a>
+            <a href="destination-europa.html"
+              ><span class="box-num">01</span> Destination</a
+            >
+            <a href="crew-commander.html"
+              ><span class="box-num">02</span> Crew</a
+            >
+            <a href="technology-capsule.html"
+              ><span class="box-num">03</span> Technology</a
+            >
+            <!-- </div> -->
+          </div>
+        </div>
+      </header>
+
+      <div class="technology-container">
+        <div class="heading-tech">
+          <h2 class="heading__text"><span>03</span>Space launch 101</h2>
+        </div>
+        <div class="content-tech">
+          <div class="content-tech__details">
+            <div class="details-1">
+              <a href="technology-capsule.html">1</a>
+              <a href="technology-spaceport.html">2</a>
+              <a href="technology-vehicle.html">3</a>
+            </div>
+
+            <div class="details-2">
+              <p class="para">The terminology...</p>
+              <h1 class="head-tech">Spaceport</h1>
+              <p class="para-content">
+                A spaceport or cosmodrome is a site for launching (or receiving)
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft. Based in the famous Cape Canaveral, our spaceport is
+                ideally situated to take advantage of the Earth’s rotation for
+                launch.
+              </p>
+            </div>
+          </div>
+          <div class="content-tech__img">
+            <img
+              src="./assets/technology/image-spaceport-landscape.jpg"
+              alt="space-capsule"
+              class="content-tech__img--desktop"
+            />
+
+            <img
+              src="./assets/technology/image-spaceport-portrait.jpg"
+              alt="space-capsule"
+              class="content-tech__img--mobile"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
+    terminology... Spaceport A spaceport or cosmodrome is a site for launching
+    (or receiving) spacecraft, by analogy to the seaport for ships or airport
+    for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+    situated to take advantage of the Earth’s rotation for launch. -->
+  </body>
+  <script src="./index.js"></script>
 </html>
