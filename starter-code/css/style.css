@@ -504,7 +504,7 @@ body {
 
 .header__text-box {
   width: 50%;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   padding: 0rem 5rem;
@@ -559,9 +559,13 @@ body {
   .header__text-box a:visited {
     margin-right: 5rem;
     font-size: 1.3rem;
+    font-weight: 300;
     text-decoration: none;
     color: #fff;
     transition: all 0.2s ease-in-out; }
+    .header__text-box a:link span,
+    .header__text-box a:visited span {
+      font-weight: 800; }
     .header__text-box a:link:hover,
     .header__text-box a:visited:hover {
       transform: scale(1.1); }

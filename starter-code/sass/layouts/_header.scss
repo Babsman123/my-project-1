@@ -37,7 +37,7 @@
 
   &__text-box {
     width: 50%;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     padding: 0rem 5rem;
@@ -122,9 +122,14 @@
       margin-right: 5rem;
       // background-color: red;
       font-size: 1.3rem;
+      font-weight: 300;
       text-decoration: none;
       color: #fff;
       transition: all.2s ease-in-out;
+
+      span {
+        font-weight: 800;
+      }
 
       &:hover {
         transform: scale(1.1);
