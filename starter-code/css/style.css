@@ -531,7 +531,8 @@ body {
       opacity: 0;
       transform: translate(-50%, -50%) scale(1.1);
       transition: all 0.2s;
-      background: rgba(63, 63, 63, 0.5); } }
+      background: rgba(63, 63, 63, 0.5);
+      backdrop-filter: blur(100px); } }
   .header__text-box > * {
     padding: 1rem 0rem;
     height: 100%;
