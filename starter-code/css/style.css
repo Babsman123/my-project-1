@@ -497,7 +497,7 @@ body {
     position: absolute;
     left: 6rem;
     z-index: 1000;
-    height: 0.2rem;
+    height: 0.1rem;
     width: 100%;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1px); }
@@ -508,8 +508,8 @@ body {
   display: flex;
   align-items: center;
   padding: 0rem 5rem;
-  background: rgba(63, 63, 63, 0.5);
-  backdrop-filter: blur(7px);
+  background: rgba(63, 63, 63, 0.2);
+  backdrop-filter: blur(10px);
   border-radius: 3px;
   position: relative; }
   @media (max-width: 56.25em) {
@@ -531,8 +531,7 @@ body {
       opacity: 0;
       transform: translate(-50%, -50%) scale(1.1);
       transition: all 0.2s;
-      background: rgba(63, 63, 63, 0.5);
-      backdrop-filter: blur(100px); } }
+      background: rgba(63, 63, 63, 0.9); } }
   .header__text-box > * {
     padding: 1rem 0rem;
     height: 100%;
